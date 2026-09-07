@@ -1,4 +1,5 @@
 import "./App.css";
+import profilePhoto from "./assets/profile.jpeg";
 function App() {
   return (
     <div className="portfolio">
@@ -66,7 +67,7 @@ function App() {
             <div className="orbit orbit-2"></div>
 
             <div className="orbit-center">
-             <img src="/profile.jpg" alt="Shastika" />
+             <img src={profilePhoto} alt="Shastika" />
             </div>
           </div>
         </section>

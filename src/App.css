@@ -58,12 +58,13 @@ a {
 .navbar {
   position: fixed;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  transform: none;
 
   z-index: 1000;
 
-  width: min(1180px, 92%);
+  width: 100%;
+  box-sizing: border-box;
   height: 75px;
 
   display: flex;
@@ -917,4 +918,10 @@ footer {
   transform: none;
   border-radius: 50%;
   display: block;
+}
+/* Fix top navbar and main alignment */
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
